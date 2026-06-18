@@ -1,133 +1,114 @@
-<section class="relative pt-32 pb-20 overflow-hidden">
+<section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
 
-    <div class="container mx-auto px-6">
-
-        <div class="grid lg:grid-cols-[1fr_0.9fr] gap-8 items-center">
+    <div class="container">
+        <div class="hero-grid">
 
             <!-- Left -->
-
             <div>
-
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/10 text-sm font-medium mb-8">
-
-                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-
-                    Available For Freelance Projects
-
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    SaaS & Business Systems Developer
                 </div>
 
-                <h1 class="text-6xl lg:text-7xl font-black leading-none">
-
-                    Laravel Developer
-
-                    <br>
-
-                    Building SaaS &
-
-                    <br>
-
-                    Business Systems
-
+                <h1>
+                    Full Stack Developer<br>
+                    Building <em>Scalable</em><br>
+                    Web Applications
                 </h1>
 
-                <p class="mt-8 text-xl text-slate-400 leading-relaxed max-w-xl">
-
-                    I help businesses automate processes, improve productivity
-                    and grow through custom web applications, SaaS platforms
-                    and WordPress solutions.
-
+                <p class="hero-desc">
+                    I design and build scalable digital products that help businesses optimize operations, improve efficiency, and grow.
                 </p>
 
-                <div class="mt-10 flex flex-wrap gap-4">
-
-                    <a href="#projects" class="hero-btn">
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fa-solid fa-layer-group"></i>
                         View Projects
                     </a>
-
-                    <a href="#contact" class="hero-btn-outline">
-                        Start A Project
+                    <a href="#contact" class="btn-ghost">
+                        Get In Touch 
+                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
-
                 </div>
-
             </div>
 
             <!-- Right -->
-
-            <div class="relative h-[720px] flex items-end justify-center">
-
+            <div class="hero-right">
                 <div class="hero-glow"></div>
-
-                <img
-                    src="{{ asset('assets/images/me_png.png') }}"
-                    alt="Abderrahim"
-                    class="absolute bottom-0 h-[720px] w-auto z-10">
-
-                <!-- Experience -->
-
-                <div
-                    class="absolute left-0 top-28 z-20 glass-card">
-
-                    <h3 class="text-4xl font-bold text-blue-400">
-                        3+
-                    </h3>
-
-                    <p class="text-slate-300">
-                        Years Experience
-                    </p>
-
+                <div class="hero-image-wrap">
+                    <img src="{{ asset('assets/images/me2.png') }}" alt="Abderrahim" class="hero-img">
                 </div>
 
-                <!-- Projects -->
-
-                <div
-                    class="absolute right-0 top-16 z-20 glass-card">
-
-                    <h3 class="text-4xl font-bold text-purple-400">
-                        20+
-                    </h3>
-
-                    <p class="text-slate-300">
-                        Projects Built
-                    </p>
-
+                <!-- Floating stats -->
+                <div class="stat-chip chip-tl">
+                    <span class="num" style="color:var(--indigo)">3+</span>
+                    <span class="lbl">Years Experience</span>
                 </div>
-
-                <!-- SaaS -->
-
-                <div
-                    class="absolute right-6 bottom-40 z-20 glass-card">
-
-                    <h3 class="text-4xl font-bold text-green-400">
-                        3
-                    </h3>
-
-                    <p class="text-slate-300">
-                        SaaS Platforms
-                    </p>
-
+                <div class="stat-chip chip-tr">
+                    <span class="num" style="color:var(--purple)">20+</span>
+                    <span class="lbl">Projects Built</span>
                 </div>
-
-                <!-- Technologies -->
-
-                <div
-                    class="absolute left-4 bottom-24 z-20 glass-card">
-
-                    <h3 class="text-4xl font-bold text-orange-400">
-                        10+
-                    </h3>
-
-                    <p class="text-slate-300">
-                        Technologies
-                    </p>
-
+                <div class="stat-chip chip-br">
+                    <span class="num" style="color:var(--green)">3</span>
+                    <span class="lbl">SaaS Platforms</span>
                 </div>
-
+                <div class="stat-chip chip-bl">
+                    <span class="num" style="color:var(--orange)">10+</span>
+                    <span class="lbl">Technologies</span>
+                </div>
             </div>
 
         </div>
-
     </div>
 
+    <!-- Tech Marquee -->
+    <div class="marquee-wrap" style="margin-top:72px;">
+        <div class="marquee-track">
+            <!-- First set -->
+            <div class="marquee-item"><i class="fab fa-laravel" style="color:#F05340"></i> Laravel</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-php" style="color:#8892BF"></i> PHP</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-wordpress" style="color:#21759B"></i> WordPress</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-docker" style="color:#2496ED"></i> Docker</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-git-alt" style="color:#F05032"></i> Git</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fa-solid fa-database" style="color:#4479A1"></i> MySQL</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-vuejs" style="color:#41B883"></i> Vue.js</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-css3-alt" style="color:#1572B6"></i> Tailwind CSS</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fa-brands fa-linux" style="color:#FCC624"></i> Linux</div>
+            <div class="marquee-dot"></div>
+            <!-- Duplicate set -->
+            <div class="marquee-item"><i class="fab fa-laravel" style="color:#F05340"></i> Laravel</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-php" style="color:#8892BF"></i> PHP</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-js" style="color:#F7DF1E"></i> JavaScript</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-wordpress" style="color:#21759B"></i> WordPress</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-docker" style="color:#2496ED"></i> Docker</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-git-alt" style="color:#F05032"></i> Git</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fa-solid fa-database" style="color:#4479A1"></i> MySQL</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-vuejs" style="color:#41B883"></i> Vue.js</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fab fa-css3-alt" style="color:#1572B6"></i> Tailwind CSS</div>
+            <div class="marquee-dot"></div>
+            <div class="marquee-item"><i class="fa-brands fa-linux" style="color:#FCC624"></i> Linux</div>
+            <div class="marquee-dot"></div>
+        </div>
+    </div>
 </section>
