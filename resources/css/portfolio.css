@@ -1,0 +1,58 @@
+body{
+    font-family: Inter,sans-serif;
+}
+
+.gradient-text{
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:999px;
+    background:#2563eb;
+    filter:blur(150px);
+    opacity:.25;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.project-card{
+    background:#0b1222;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:20px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border-color:#3b82f6;
+}
+
+.service-card{
+    background:#0b1222;
+    border-radius:20px;
+    padding:30px;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.hero-btn{
+    padding:16px 32px;
+    border-radius:14px;
+    background:#2563eb;
+}
+
+.hero-btn-outline{
+    padding:16px 32px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.1);
+}

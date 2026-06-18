@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: Inter,sans-serif;
+}
+
+.gradient-text{
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:999px;
+    background:#2563eb;
+    filter:blur(150px);
+    opacity:.25;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.project-card{
+    background:#0b1222;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:20px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border-color:#3b82f6;
+}
+
+.service-card{
+    background:#0b1222;
+    border-radius:20px;
+    padding:30px;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.hero-btn{
+    padding:16px 32px;
+    border-radius:14px;
+    background:#2563eb;
+}
+
+.hero-btn-outline{
+    padding:16px 32px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.hero-glow{
+    position:absolute;
+    width:700px;
+    height:700px;
+    border-radius:9999px;
+    background:#2563eb;
+    filter:blur(180px);
+    opacity:.30;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.tech-card{
+    background:#071225;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    transition:.3s;
+}
+
+.tech-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563eb;
+}
+
+.contact-btn-primary{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:18px;
+    border-radius:16px;
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #8b5cf6
+    );
+}
+
+.contact-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:18px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+
+.service-card{
+    background:#071225;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:30px;
+    min-height:220px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:#2563eb;
+}
+
+.service-card i{
+    display:block;
+}
+
+.hero-glow{
+    position:absolute;
+    width:700px;
+    height:700px;
+    border-radius:9999px;
+    background:#2563eb;
+    opacity:.25;
+    filter:blur(180px);
+}
+
+.glass-card{
+    padding:20px 25px;
+    border-radius:20px;
+    background:rgba(15,23,42,.8);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+}
