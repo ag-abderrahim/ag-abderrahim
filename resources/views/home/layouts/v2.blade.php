@@ -43,10 +43,51 @@
 
     @yield('content')
 
-<footer>
-  <div class="container">
-    <p>© 2025 Abderrahim — Built with Laravel.</p>
-  </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <div class="nav-logo">
+                    <div class="nav-logo-mark">AG</div>
+                    <div class="nav-logo-text">
+                        <h3>Abderrahim</h3>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+
+                <p>
+                    Building scalable web applications, SaaS products,
+                    and business systems.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect</h4>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ag-abderrahim"><i class="fab fa-github"></i></a>
+                    <a href="https://gitlab.com/ag-abderrahim"><i class="fab fa-gitlab"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Abderrahim-Agoummad/pfbid0hzRCVa7Am8EZoXLuQEbdhxX6cPUxo5yVLwgWDqQBVuaBZRUcVTyWaDrdFVRN8TqSl/"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Abderrahim — Built with Laravel.</p>
+        </div>
+    </div>
 </footer>
 
 
