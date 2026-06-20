@@ -70,6 +70,26 @@
                 Users
             </a>
 
+            <!-- Projects -->
+            <a href="{{ route('projects.index') }}"
+            class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-zinc-900 transition duration-200">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 11H5m14-6H5m14 12H5m14 6H5"/>
+
+                </svg>
+
+                Projects
+            </a>
+
             <!-- Roles -->
             <a href="{{ route('roles.index') }}"
                class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-zinc-900 transition duration-200">
@@ -223,6 +243,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
     <script>
         $(document).ready(function () {
             $('#aTable').DataTable({
@@ -237,5 +259,7 @@
             });
         });
     </script>
+
+    @yield('scripts')
 </body>
 </html>
