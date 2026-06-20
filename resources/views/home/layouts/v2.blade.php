@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/portfolio.css') }}">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     @yield('links')
 </head>
 
@@ -24,7 +26,7 @@
     <!-- NAV -->
     <nav>
         <div class="container nav-inner">
-            <a href="#" class="nav-logo">
+            <a href="{{ route('home') }}" class="nav-logo">
                 <div class="nav-logo-mark">AG</div>
                 <div class="nav-logo-text">
                     <h3>Abderrahim</h3>
@@ -32,8 +34,8 @@
                 </div>
             </a>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('public.projects') }}">Projects</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#technologies">Technologies</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -68,8 +70,8 @@
 
                 <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <a href="#">Home</a>
-                    <a href="#projects">Projects</a>
+                    <a href="{{ route('home') }}">Home</a>
+                    <a href="{{ route('public.projects') }}">Projects</a>
                     <a href="#services">Services</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -96,7 +98,7 @@
         </div>
     </footer>
 
-
+m   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     @yield('scripts')
 
 </body>

@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             PerNameSeeder::class,
             AdminSeeder::class,
+            ProjectSeeder::class,
         ]);
         // User::factory(10)->create();
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\ADashboardController;
 use App\Http\Controllers\admin\PermissionsController;
+use App\Http\Controllers\admin\ProjectController;
 use App\Http\Controllers\admin\RolesController;
 use App\Http\Controllers\admin\UsersController;
 use App\Http\Controllers\home\PagesController;
@@ -11,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 // Home
 Route::group([], function () {
     Route::get('/', [PagesController::class, 'home'])->name('home');
+    Route::get('/projects', [PagesController::class, 'projects'])->name('public.projects');
+    Route::get('/projects/{slug}', [PagesController::class, 'projectShow'])->name('public.projects.show');
 });
 
 // Admin
@@ -24,9 +27,20 @@ Route::middleware(['auth', 'role:admin'])
         Route::resource('roles', RolesController::class);
         Route::post('/modifier-permissions/{id}', [RolesController::class, 'updatePermissions'])->name('addPermissions');
         Route::resource('users', UsersController::class);
+        Route::resource('projects', ProjectController::class);
         Route::put('/users-toggle-active/{user}', [UsersController::class, 'toggleActive'])->name('users.active');
         Route::put('/users-toggle-verify/{user}', [UsersController::class, 'toggleVerify'])->name('users.verify');
-    });
+
+        Route::post('/projects/{project}/gallery', [ProjectController::class, 'storeGallery'])
+            ->name('projects.gallery.store');
+
+        Route::delete('/projects/gallery/{id}', [ProjectController::class, 'deleteGallery'])
+            ->name('projects.gallery.delete');
+
+        Route::post('/projects/gallery/reorder', [ProjectController::class, 'reorderGallery'])
+            ->name('projects.gallery.reorder');
+            });
+
 
 // User
 Route::middleware(['auth', 'role:user'])
