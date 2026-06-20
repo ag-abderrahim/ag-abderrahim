@@ -36,6 +36,34 @@
             @csrf
             @method('PUT')
 
+            <div class="grid grid-cols-2 gap-6">
+
+                <label class="flex items-center gap-3 cursor-pointer">
+                    <input type="checkbox"
+                        name="featured"
+                        value="1"
+                        {{ $project->featured ? 'checked' : '' }}
+                        class="w-5 h-5 rounded border-zinc-300 text-black focus:ring-black">
+
+                    <span class="text-sm font-semibold text-zinc-700">
+                        Featured Project
+                    </span>
+                </label>
+
+                <label class="flex items-center gap-3 cursor-pointer">
+                    <input type="checkbox"
+                        name="status"
+                        value="1"
+                        {{ $project->status ? 'checked' : '' }}
+                        class="w-5 h-5 rounded border-zinc-300 text-black focus:ring-black">
+
+                    <span class="text-sm font-semibold text-zinc-700">
+                        Active / Published
+                    </span>
+                </label>
+
+            </div>
+
             <!-- Basic Info -->
             <div class="grid grid-cols-2 gap-6">
 
